@@ -1,0 +1,53 @@
+************************************************************************************************************************
+2008-10-07 Dieter Bunkerd  <dieter.bunkerd@t3net.in.th>
+* Internal release V 4.0.1 to 4.0.3
+- Changed config.linkVars = L(1-6) to avoid index.php?L=0 if realURL is not used.
+- Commented out additionalHeaders = Content-Type:text/html;charset=utf-8
+  because this is now sent automatically.
+- Changed spamProtectEmailAddresses = ascii
+  This way no JavaScript is needed to decrypt email addresses.
+- Added page.adminPanelStyles = 1 if admin panel is enabled.
+- Set removeDefaultJS = 1 since we dont need the blur links JavaScript.
+- Updated the complete package to TYPO3 4.2.2
+- Applied patch for bug #9497 in TYPO3 4.2.2
+  t3lib/class.t3lib_tceforms.php
+  typo3/alt_palette.php
+  typo3/wizard_rte.php
+  Original files are still in place.
+2008-10-01 Dieter Bunkerd  <dieter.bunkerd@t3net.in.th>
+* Internal release V 4.0.0
+- Renumbered object temp.buildHeaderData from 10 to 80 so that we are able to add things
+  between it (e.g. the YAML debug stylesheet).
+- Added an automatic generated ID for the body tag of each page to make it more simple
+  to change designs for some pages.
+  <body id="pageUID-xx"> could be changed with CSS: #pageUID-xx {....}
+  Thanks to fazzyx for that idea.
+- Changed all date formats to %A, %Y-%m-%d
+  Please read http://www.saqqara.demon.co.uk/datefmt.htm
+  why you should read this format in all countries.
+- Made languageIsoCodeStandardLang, languageIsoCodeFirstLang, languageIsoCodeSecondLang,
+  languageIsoCodeThirdLang, languageIsoCodeFourthLang, languageIsoCodeFifthLang and
+  languageIsoCodeSixthLang a string instead of an option to make it possible to enter
+  ANY Iso code and not just the ones the option box contained.
+- Removed dependency to kb_md5fepw. Too many questions and problems with this.
+  Of course encryption of passwords is still supported. Install and configure by
+  yourself, if you need or want that.
+  In my opinion this must go to the core of TYPO3 and be supported by ALL extensions
+  by default.
+- Added cron_accessiblemenus and gov_accesskey configuration to the static setup
+  of the extension.
+  Features can be switched on and off using constant editor (see yaml-expert-settings).
+  Switched off by default.
+  Configuration is added for all three menus (topnav, nav_main and submenu).
+  If you switch on the feature, it is available in all three menus. See TSOB to control
+  this manually.
+- Removed old user_IProc_dfn script.
+- Removed all translated content.
+- Set english as standard language.
+- Added syslanguage_flags to the list of recommended extensions.
+- Removed YAML from the extension because it is not published under the GPL.
+- Changed footer links and removed Dirk Jesse's name on his demand.
+- Changed all copyright hints. 
+- Changed state to stable.
+- Removed dependency on kb_md5fepw.
+- First version released under the GPL.

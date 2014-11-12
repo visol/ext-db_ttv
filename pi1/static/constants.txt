@@ -1,0 +1,460 @@
+####################################################
+##  Copyright notice
+##  
+##  (c) 2005-2008 Dieter Bunkerd (dieter.bunkerd@t3net.in.th)
+##  All rights reserved
+##  
+##  This script is part of the TYPO3 project. The TYPO3 project is
+##  free software; you can redistribute it and/or modify
+##  it under the terms of the GNU General Public License as published by
+##  the Free Software Foundation; either version 2 of the License, or
+##  (at your option) any later version.
+##
+##  The GNU General Public License can be found at
+##  http://www.gnu.org/copyleft/gpl.html.
+##  A copy is found in the textfile GPL.txt and important notices to the license
+##  from the author is found in LICENSE.txt distributed with these scripts.
+##
+##
+##  This script is distributed in the hope that it will be useful,
+##  but WITHOUT ANY WARRANTY; without even the implied warranty of
+##  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+##  GNU General Public License for more details.
+##
+##  This copyright notice MUST APPEAR in all copies of the script!
+####################################################
+## Templates for TemplaVoila
+## static Constants
+## Version: 4.0.3
+####################################################
+PAGE_TARGET = _self
+styles.content.imgtext.captionSplit = 1
+styles.content.imgtext.imageTextSplit = 1
+content.pageFrameObj =
+[browser = msie]
+doctypesw_cond = 1
+[else]
+doctypesw_cond = 0
+[end]
+////////////////////////////////////////////////////
+// TSConstantsEditor Config
+////////////////////////////////////////////////////
+TSConstantEditor.plugin-tx_dbttv-basics {
+	header = Templates for TemplaVoila (Use with TYPO3 Versions 4.2.x ONLY)
+	description = Public versions, please notice:
+	bulletlist = <b>To edit an option,</b> first mark the corresponding check-box, click "Update", then change the value.//Some checkboxes are possibly checked already, even if it is a fresh installation. This is <b>not</b> a problem.//<b>To return to a default value,</b> uncheck the corresponding check-box, then click "Update".//All values are stored in the "Constants"-Section of your main template. You can also delete them there to return to the default value(s).//<b>The links in the footer must not be removed unless you bought a license.</b>//<b>If you need help</b> with YAML or this TYPO3 template, don't hesitate to join our forum at <b>forum.yaml.de</b> and ask your questions. Help is available there in both english and german language.//<b>Documentation</b> about this template you will find at yaml.t3net.de. Please read <b>before</b> posting questions in our forum.//If you find an <b>error or a bug in this template</b>, please don't write emails to me, but report the error in our forum.//If you find a <b>bug in TYPO3</b>, we cannot help you. Please report bugs concerning TYPO3 itself at bugs.typo3.org
+	image = yaml-t3*.gif
+	3 = mainMenuLinkWrap, mainMenuHeaderWrap, mainMenuIfsubLinkWrap, subMenuEntryLevel, subMenuExpandToggle, subNavExcludeList, subMenuOff
+	4 = mainMenuJsMenuStandardLabel, mainMenuJsMenuFirstLangLabel, mainMenuJsMenuSecondLangLabel, mainMenuJsMenuThirdLangLabel, mainMenuJsMenuFourthLangLabel, mainMenuJsMenuFifthLangLabel, mainMenuJsMenuSixthLangLabel, mainMenuJsMenuAllWrap, selectorBoxOff, mainMenuJsMenuPage
+	6 = tabNavigationOff, tabNavEntryLevel, tabNavExcludeList
+	7 = menuHeadlineOff
+	8 = footerOff, footerStandardLangHtmlCode, footerFirstLangHtmlCode, footerSecondLangHtmlCode, footerThirdLangHtmlCode, footerFourthLangHtmlCode, footerFifthLangHtmlCode, footerSixthLangHtmlCode
+}
+TSConstantEditor.plugin-tx_dbttv-language {
+	header = Templates for TemplaVoila (Use with TYPO3 Versions 4.2.x ONLY)
+	description = Public versions, please notice:
+	bulletlist = <b>To edit an option,</b> first mark the corresponding check-box, click "Update", then change the value.//Some checkboxes are possibly checked already, even if it is a fresh installation. This is <b>not</b> a problem.//<b>To return to a default value,</b> uncheck the corresponding check-box, then click "Update".//All values are stored in the "Constants"-Section of your main template. You can also delete them there to return to the default value(s).//<b>The links in the footer must not be removed unless you bought a license.</b>//<b>If you need help</b> with YAML or this TYPO3 template, don't hesitate to join our forum at <b>forum.yaml.de</b> and ask your questions. Help is available there in both english and german language.//<b>Documentation</b> about this template you will find at yaml.t3net.de. Please read <b>before</b> posting questions in our forum.//If you find an <b>error or a bug in this template</b>, please don't write emails to me, but report the error in our forum.//If you find a <b>bug in TYPO3</b>, we cannot help you. Please report bugs concerning TYPO3 itself at bugs.typo3.org
+	image = yaml-t3*.gif
+	1 = yamlTemplateUsesLanguages, standardLanguage, firstForeignLanguage, secondForeignLanguage, thirdForeignLanguage, fourthForeignLanguage, fifthForeignLanguage, sixthForeignLanguage, languageIsoCodeStandardLang, languageIsoCodeFirstLang, languageIsoCodeSecondLang, languageIsoCodeThirdLang, languageIsoCodeFourthLang, languageIsoCodeFifthLang, languageIsoCodeSixthLang, languageLocaleStandardLang, languageLocaleFirstLang, languageLocaleSecondLang, languageLocaleThirdLang, languageLocaleFourthLang, languageLocaleFifthLang, languageLocaleSixthLang
+}
+TSConstantEditor.plugin-tx_dbttv-searchbox {
+	header = Templates for TemplaVoila (Use with TYPO3 Versions 4.2.x ONLY)
+	description = Public versions, please notice:
+	bulletlist = <b>To edit an option,</b> first mark the corresponding check-box, click "Update", then change the value.//Some checkboxes are possibly checked already, even if it is a fresh installation. This is <b>not</b> a problem.//<b>To return to a default value,</b> uncheck the corresponding check-box, then click "Update".//All values are stored in the "Constants"-Section of your main template. You can also delete them there to return to the default value(s).//<b>The links in the footer must not be removed unless you bought a license.</b>//<b>If you need help</b> with YAML or this TYPO3 template, don't hesitate to join our forum at <b>forum.yaml.de</b> and ask your questions. Help is available there in both english and german language.//<b>Documentation</b> about this template you will find at yaml.t3net.de. Please read <b>before</b> posting questions in our forum.//If you find an <b>error or a bug in this template</b>, please don't write emails to me, but report the error in our forum.//If you find a <b>bug in TYPO3</b>, we cannot help you. Please report bugs concerning TYPO3 itself at bugs.typo3.org
+	image = yaml-t3*.gif
+	13 = searchBoxOff, searchPagePID, searchboxTmplFile, searchboxTmplFileFirstLang, searchboxTmplFileSecondLang, searchboxTmplFileThirdLang, searchboxTmplFileFourthLang, searchboxTmplFileFifthLang, searchboxTmplFileSixthLang
+}
+TSConstantEditor.plugin-tx_dbttv-header {
+	header = Templates for TemplaVoila (Use with TYPO3 Versions 4.2.x ONLY)
+	description = Public versions, please notice:
+	bulletlist = <b>To edit an option,</b> first mark the corresponding check-box, click "Update", then change the value.//Some checkboxes are possibly checked already, even if it is a fresh installation. This is <b>not</b> a problem.//<b>To return to a default value,</b> uncheck the corresponding check-box, then click "Update".//All values are stored in the "Constants"-Section of your main template. You can also delete them there to return to the default value(s).//<b>The links in the footer must not be removed unless you bought a license.</b>//<b>If you need help</b> with YAML or this TYPO3 template, don't hesitate to join our forum at <b>forum.yaml.de</b> and ask your questions. Help is available there in both english and german language.//<b>Documentation</b> about this template you will find at yaml.t3net.de. Please read <b>before</b> posting questions in our forum.//If you find an <b>error or a bug in this template</b>, please don't write emails to me, but report the error in our forum.//If you find a <b>bug in TYPO3</b>, we cannot help you. Please report bugs concerning TYPO3 itself at bugs.typo3.org
+	image = yaml-t3*.gif
+	2 = headerImageWidth, headerImageHeight, headerImageTransparency, firstHeaderImageOff, noGifBuilderForFirstHeaderImage, linkFirstImageToggle, homePageUID
+	5 = headerNavigationIncludeList, topNavOff
+	11 = secondHeaderImageOff, noGifBuilderForSecondHeaderImage, headerBannerWidth, headerBannerHeight, headerBannerTransparency
+}
+TSConstantEditor.plugin-tx_dbttv-teaser {
+	header = Templates for TemplaVoila (Use with TYPO3 Versions 4.2.x ONLY)
+	description = Public versions, please notice:
+	bulletlist = <b>To edit an option,</b> first mark the corresponding check-box, click "Update", then change the value.//Some checkboxes are possibly checked already, even if it is a fresh installation. This is <b>not</b> a problem.//<b>To return to a default value,</b> uncheck the corresponding check-box, then click "Update".//All values are stored in the "Constants"-Section of your main template. You can also delete them there to return to the default value(s).//<b>The links in the footer must not be removed unless you bought a license.</b>//<b>If you need help</b> with YAML or this TYPO3 template, don't hesitate to join our forum at <b>forum.yaml.de</b> and ask your questions. Help is available there in both english and german language.//<b>Documentation</b> about this template you will find at yaml.t3net.de. Please read <b>before</b> posting questions in our forum.//If you find an <b>error or a bug in this template</b>, please don't write emails to me, but report the error in our forum.//If you find a <b>bug in TYPO3</b>, we cannot help you. Please report bugs concerning TYPO3 itself at bugs.typo3.org
+	image = yaml-t3*.gif
+	1 = languageMenuOff
+	9 = toolbarDateFormatStandardLang, toolbarDateFormatFirstLang, toolbarDateFormatSecondLang, toolbarDateFormatThirdLang, toolbarDateFormatFourthLang, toolbarDateFormatFifthLang, toolbarDateFormatSixthLang, dateAndTimeOff
+	10 = fontsizeHtmlCode, fontSizeSelectorOff, pageHeaderDataStandardLang, pageHeaderDataFirstLang, pageHeaderDataSecondLang, pageHeaderDataThirdLang, pageHeaderDataFourthLang, pageHeaderDataFifthLang, pageHeaderDataSixthLang, pageBodyData
+	12 = teaserOff, toolbarStandardLangClickPathPrefix, toolbarFirstLangClickPathPrefix, toolbarSecondLangClickPathPrefix, toolbarThirdLangClickPathPrefix, toolbarFourthLangClickPathPrefix, toolbarFifthLangClickPathPrefix, toolbarSixthLangClickPathPrefix, rootlineLinkWrap, rootlineOff
+}
+###MOD_TS:EDITABLE_CONSTANTS###
+# cat=plugin-tx_dbttv-searchbox/enable/a; type=options[No=0,Yes=1]; label=Switch off searchbox?:If the searchbox should be displayed, make sure the next 1 to 8 options (depending on how much languages you use) are also correctly set.
+searchBoxOff = 0
+# cat=plugin-tx_dbttv-searchbox/enable/b; type=int+; label=Searchpage PID (all languages):UID of the page containing the Indexed-Search-Plugin - REQUIRED if searchbox is in use:
+searchPagePID = 5
+# cat=plugin-tx_dbttv-searchbox/enable/c; type=string; label=HTML-Template for searchbox:(Standard Language) - REQUIRED if searchbox is in use:
+searchboxTmplFile = fileadmin/templates/searchbox/template-en.htm
+# cat=plugin-tx_dbttv-searchbox/enable/d; type=string; label=HTML-Template for searchbox:(First Foreign Language):
+searchboxTmplFileFirstLang =
+# cat=plugin-tx_dbttv-searchbox/enable/e; type=string; label=HTML-Template for searchbox:(Second Foreign Language):
+searchboxTmplFileSecondLang =
+# cat=plugin-tx_dbttv-searchbox/enable/f; type=string; label=HTML-Template for searchbox:(Third Foreign Language):
+searchboxTmplFileThirdLang =
+# cat=plugin-tx_dbttv-searchbox/enable/g; type=string; label=HTML-Template for searchbox:(Fourth Foreign Language):
+searchboxTmplFileFourthLang =
+# cat=plugin-tx_dbttv-searchbox/enable/h; type=string; label=HTML-Template for searchbox:(Fifth Foreign Language):
+searchboxTmplFileFifthLang =
+# cat=plugin-tx_dbttv-searchbox/enable/i; type=string; label=HTML-Template for searchbox:(Sixth Foreign Language):
+searchboxTmplFileSixthLang =
+
+
+# cat=plugin-tx_dbttv-header/enable/a; type=options[No=0,Yes=1]; label=Switch off Header-Navigation?:Make sure you have set the UIDs of the pages to appear in Header-Navigation in the next option.
+topNavOff = 0
+# cat=plugin-tx_dbttv-header/enable/b; type=string; label=Menu in Header (Lang all):Which pages must appear in the Header-Navigation? Use a comma-separated list of UIDs (e.g. 1,2,3)
+headerNavigationIncludeList = 6,5,4
+# cat=plugin-tx_dbttv-header/enable/c; type=options[No=0,Yes=1]; label=Switch off first header image?:NOTICE: The header images must be stored within the page you want to display them. They are inherited to all pages below. By default the two images are stored in "Rootpage" only, hence they are inherited to ALL pages. 
+firstHeaderImageOff = 0
+# cat=plugin-tx_dbttv-header/enable/d; type=options[No=0,Yes=1]; label=Switch off second header image?:NOTICE: The header images must be stored within the page you want to display them. They are inherited to all pages below. By default the two images are stored in "Rootpage" only, hence they are inherited to ALL pages.
+secondHeaderImageOff = 0
+# cat=plugin-tx_dbttv-header/enable/e; type=options[No=1,Yes=0]; label=Use GIFBUILDER for 1st image?:If you use GIFBUILDER you can resize the image(s) that you uploaded to a page. Otherwise they are taken as they are and the options under Dimensions, widths, heights, pixels will be ignored.
+noGifBuilderForFirstHeaderImage = 1
+# cat=plugin-tx_dbttv-header/enable/f; type=options[No=1,Yes=0]; label=Use GIFBUILDER for 2nd image?:If you use GIFBUILDER you can resize the image(s) that you uploaded to a page. Otherwise they are taken as they are and the options under Dimensions, widths, heights, pixels will be ignored. 
+noGifBuilderForSecondHeaderImage = 1
+
+# cat=plugin-tx_dbttv-header/links/a; type=string; label=Skiplink navigation (Lang 0):HTML-Code for the Skiplink-Navigation (used by YAML). If you don't know what it is, leave this setting alone:
+headerSkiplinkHtmlCodeStandardLang = <a class="skip" href="#navigation" title="Direkt zur Navigation springen">Zur Navigation springen</a><span class="hideme">.</span><a class="skip" href="#content" title="Direkt zum Content springen">Zum Content springen</a><span class="hideme">.</span>
+# cat=plugin-tx_dbttv-header/links/b; type=string; label=Skiplink navigation (Lang 1):HTML-Code for the Skiplink-Navigation (used by YAML). If you don't know what it is, leave this setting alone:
+headerSkiplinkHtmlCodeFirstLang = <a class="skip" href="#navigation" title="Jump to navigation">Jump to navigation</a><span class="hideme">.</span><a class="skip" href="#content" title="Jump to content">Jump to content</a><span class="hideme">.</span>
+# cat=plugin-tx_dbttv-header/links/c; type=string; label=Skiplink navigation (Lang 2):HTML-Code for the Skiplink-Navigation (used by YAML). If you don't know what it is, leave this setting alone:
+headerSkiplinkHtmlCodeSecondLang =
+# cat=plugin-tx_dbttv-header/links/d; type=string; label=Skiplink navigation (Lang 3):HTML-Code for the Skiplink-Navigation (used by YAML). If you don't know what it is, leave this setting alone:
+headerSkiplinkHtmlCodeThirdLang =
+# cat=plugin-tx_dbttv-header/links/e; type=string; label=Skiplink navigation (Lang 4):HTML-Code for the Skiplink-Navigation (used by YAML). If you don't know what it is, leave this setting alone:
+headerSkiplinkHtmlCodeFourthLang =
+# cat=plugin-tx_dbttv-header/links/f; type=string; label=Skiplink navigation (Lang 5):HTML-Code for the Skiplink-Navigation (used by YAML). If you don't know what it is, leave this setting alone:
+headerSkiplinkHtmlCodeFifthLang =
+# cat=plugin-tx_dbttv-header/links/g; type=string; label=Skiplink navigation (Lang 6):HTML-Code for the Skiplink-Navigation (used by YAML). If you don't know what it is, leave this setting alone:
+headerSkiplinkHtmlCodeSixthLang =
+
+# cat=plugin-tx_dbttv-header/dims/a; type=int+; label=Headerimage width (Lang all):Width of LEFT header-image:
+headerImageWidth = 300
+# cat=plugin-tx_dbttv-header/dims/b; type=int+; label=Headerimage height (Lang all):Height of LEFT header-image:
+headerImageHeight = 90
+# cat=plugin-tx_dbttv-header/dims/c; type=int+; label=Header banner width (Lang all):Width of RIGHT header-image:
+headerBannerWidth = 480
+# cat=plugin-tx_dbttv-header/dims/d; type=int+; label=Header banner height (Lang all):Height of RIGHT header-image:
+headerBannerHeight = 60
+# cat=plugin-tx_dbttv-header/dims/e; type=options[No=0,Yes=1]; label=Headerimage transparency:Set color of top-left pixel to transparent:
+headerImageTransparency = 0
+# cat=plugin-tx_dbttv-header/dims/f; type=options[No=0,Yes=1]; label=Header banner transparency:Set color of top-left pixel to transparent:
+headerBannerTransparency = 0
+
+# cat=plugin-tx_dbttv-header/other/a; type=options[No=0,Yes=1]; label=Make a link to homepage?:The FIRST header image can be a link to your homepage on all pages, if you like this.
+linkFirstImageToggle = 1
+# cat=plugin-tx_dbttv-header/other/b; type=int+; label=UID of homepage?:If you have chosen the previous option, you need to tell TYPO3 what UID the homepage has, since this could be any page.
+homePageUID = 23
+
+
+# cat=plugin-tx_dbttv-teaser/enable/a; type=options[No=0,Yes=1]; label=Switch off teaser?:If you turn off the teaser completely, everything in it (rootline, date and time, magnifiying glasses and language selector) is also turned off, no matter what the settings are in ALL following options.
+teaserOff = 0
+# cat=plugin-tx_dbttv-teaser/enable/b; type=options[No=0,Yes=1]; label=Switch off rootline (click path)?:If the rootline-menu is turned on (default), make sure the next 4 options are also correctly set.
+rootlineOff = 0
+# cat=plugin-tx_dbttv-teaser/enable/c; type=string; label=Toolbar Rootline (Lang 0):This Text prepends the clickpath-menu (standard language):
+toolbarStandardLangClickPathPrefix = You are here:
+# cat=plugin-tx_dbttv-teaser/enable/d; type=string; label=Toolbar Rootline (Lang 1):This Text prepends the clickpath-menu (first foreign language):
+toolbarFirstLangClickPathPrefix =
+# cat=plugin-tx_dbttv-teaser/enable/e; type=string; label=Toolbar Rootline (Lang 2):This Text prepends the clickpath-menu (second foreign language):
+toolbarSecondLangClickPathPrefix =
+# cat=plugin-tx_dbttv-teaser/enable/f; type=string; label=Toolbar Rootline (Lang 3):This Text prepends the clickpath-menu (third foreign language):
+toolbarThirdLangClickPathPrefix =
+# cat=plugin-tx_dbttv-teaser/enable/g; type=string; label=Toolbar Rootline (Lang 4):This Text prepends the clickpath-menu (fourth foreign language):
+toolbarFourthLangClickPathPrefix =
+# cat=plugin-tx_dbttv-teaser/enable/h; type=string; label=Toolbar Rootline (Lang 5):This Text prepends the clickpath-menu (fifth foreign language):
+toolbarFifthLangClickPathPrefix =
+# cat=plugin-tx_dbttv-teaser/enable/i; type=string; label=Toolbar Rootline (Lang 6):This Text prepends the clickpath-menu (sixth foreign language):
+toolbarSixthLangClickPathPrefix =
+# cat=plugin-tx_dbttv-teaser/enable/j; type=string; label=Toolbar Rootline (all languages):Wrap around each single rootline-element:
+rootlineLinkWrap = |&nbsp;/&nbsp; |*| |&nbsp;/&nbsp; |*| |
+# cat=plugin-tx_dbttv-teaser/enable/k; type=options[No=0,Yes=1]; label=Switch off language menu?:
+languageMenuOff = 0
+# cat=plugin-tx_dbttv-teaser/enable/l; type=options[No=0,Yes=1]; label=Switch off fontsize selector?:If the fontsize selector is turned on (default), the next 5 options provide the necessary scripts. You could also turn off the fontsize selector and add other scripts instead, if you need that. Or you could leave the fontsize selector in place and add additional scripts.
+fontSizeSelectorOff = 1
+# cat=plugin-tx_dbttv-teaser/enable/m; type=string; label=JavaScript in Header (Lang 0):HTML-Code, beeing written in the <head>Tag of the page (standard language):
+pageHeaderDataStandardLang = <script type="text/javascript" src="fileadmin/scripts/cookies.js"></script><script type="text/javascript" src="fileadmin/scripts/efa_fontsize-en.js"></script>
+# cat=plugin-tx_dbttv-teaser/enable/n; type=string; label=JavaScript in Header (Lang 1):HTML-Code, beeing written in the <head>Tag of the page (first foreign language):
+pageHeaderDataFirstLang =
+# cat=plugin-tx_dbttv-teaser/enable/o; type=string; label=JavaScript in Header (Lang 2):HTML-Code, beeing written in the <head>Tag of the page (second foreign language):
+pageHeaderDataSecondLang =
+# cat=plugin-tx_dbttv-teaser/enable/p; type=string; label=JavaScript in Header (Lang 3):HTML-Code, beeing written in the <head>Tag of the page (third foreign language):
+pageHeaderDataThirdLang =
+# cat=plugin-tx_dbttv-teaser/enable/q; type=string; label=JavaScript in Header (Lang 4):HTML-Code, beeing written in the <head>Tag of the page (fourth foreign language):
+pageHeaderDataFourthLang =
+# cat=plugin-tx_dbttv-teaser/enable/r; type=string; label=JavaScript in Header (Lang 5):HTML-Code, beeing written in the <head>Tag of the page (fifth foreign language):
+pageHeaderDataFifthLang =
+# cat=plugin-tx_dbttv-teaser/enable/s; type=string; label=JavaScript in Header (Lang 6):HTML-Code, beeing written in the <head>Tag of the page (sixth foreign language):
+pageHeaderDataSixthLang =
+# cat=plugin-tx_dbttv-teaser/enable/t; type=string; label=HTML-Code for body (Lang all):HTML-Code, beeing written in the <body>Tag of the page:
+pageBodyData = <script type="text/javascript">if (efa_fontSize) efa_fontSize.efaInit();</script>
+# cat=plugin-tx_dbttv-teaser/enable/u; type=string; label=Toolbar Fontsize (Lang all):HTML-Code to initialize fontsize-adjustment tools (magnifying glasses):
+fontsizeHtmlCode = <script type="text/javascript">if (efa_fontSize) document.write(efa_fontSize.allLinks);</script>
+# cat=plugin-tx_dbttv-teaser/enable/v; type=options[No=0,Yes=1]; label=Switch off display of date and time?:If turned on (default), the next options provide the language-specific settings.
+dateAndTimeOff = 0
+# cat=plugin-tx_dbttv-teaser/enable/w; type=string; label=Toolbar Date/Time (Lang 0):Formatting date and time for standard-language (see http://th2.php.net/strftime for possible strings formatting the date and time):
+toolbarDateFormatStandardLang = %A, %Y-%m-%d
+# cat=plugin-tx_dbttv-teaser/enable/x; type=string; label=Toolbar Date/Time (Lang 1):Formatting date and time for first foreign language:
+toolbarDateFormatFirstLang = %A, %Y-%m-%d
+# cat=plugin-tx_dbttv-teaser/enable/y; type=string; label=Toolbar Date/Time (Lang 2):Formatting date and time for second foreign language:
+toolbarDateFormatSecondLang =
+# cat=plugin-tx_dbttv-teaser/enable/za; type=string; label=Toolbar Date/Time (Lang 3):Formatting date and time for third foreign language:
+toolbarDateFormatThirdLang =
+# cat=plugin-tx_dbttv-teaser/enable/zb; type=string; label=Toolbar Date/Time (Lang 4):Formatting date and time for fourth foreign language:
+toolbarDateFormatFourthLang =
+# cat=plugin-tx_dbttv-teaser/enable/zc; type=string; label=Toolbar Date/Time (Lang 5):Formatting date and time for fifth foreign language:
+toolbarDateFormatFifthLang =
+# cat=plugin-tx_dbttv-teaser/enable/zd; type=string; label=Toolbar Date/Time (Lang 6):Formatting date and time for sixth foreign language:
+toolbarDateFormatSixthLang =
+
+# cat=plugin-tx_dbttv-basics/enable/b; type=options[No=0,Yes=1]; label=Compatibility mode?:Set this to yes, if your are upgrading from a version older than 3.0.0 AND you still want to use the old directory structure.
+yamlCompatMode1 = 0
+# cat=plugin-tx_dbttv-basics/enable/c; type=options[No=0,Yes=1]; label=Switch off JavaScript menu?:If switched on (default), the next 5 options should be used to set it up properly. 
+selectorBoxOff = 1
+# cat=plugin-tx_dbttv-basics/enable/d; type=string; label=Page IDs where JavaScript-Menu displays ?:If you need to add pages, DO NOT just enter page-IDs here, but use this syntax: TSFE:id=2,TSFE:id=5 to display the menu on pages with ID 2 and 5. Don't forget the comma to separate each one.
+mainMenuJsMenuPage = TSFE:id=23
+# cat=plugin-tx_dbttv-basics/enable/e; type=string; label=JavaScript menu (Lang 0):Headline of the JavaScript-Menu (standard language):
+mainMenuJsMenuStandardLabel = Last updated pages:
+# cat=plugin-tx_dbttv-basics/enable/f; type=string; label=JavaScript menu (Lang 1):Headline of the JavaScript-Menu (first foreign language):
+mainMenuJsMenuFirstLangLabel =
+# cat=plugin-tx_dbttv-basics/enable/g; type=string; label=JavaScript menu (Lang 2):Headline of the JavaScript-Menu (second foreign language):
+mainMenuJsMenuSecondLangLabel =
+# cat=plugin-tx_dbttv-basics/enable/h; type=string; label=JavaScript menu (Lang 3):Headline of the JavaScript-Menu (third foreign language):
+mainMenuJsMenuThirdLangLabel =
+# cat=plugin-tx_dbttv-basics/enable/i; type=string; label=JavaScript menu (Lang 4):Headline of the JavaScript-Menu (forth foreign language):
+mainMenuJsMenuFourthLangLabel =
+# cat=plugin-tx_dbttv-basics/enable/j; type=string; label=JavaScript menu (Lang 5):Headline of the JavaScript-Menu (fifth foreign language):
+mainMenuJsMenuFifthLangLabel =
+# cat=plugin-tx_dbttv-basics/enable/k; type=string; label=JavaScript menu (Lang 6):Headline of the JavaScript-Menu (sixth foreign language):
+mainMenuJsMenuSixthLangLabel =
+# cat=plugin-tx_dbttv-basics/enable/l; type=wrap; label=JavaScript menu (Lang all):The wrap around the Dropdown-Box of the JavaScript-Menu:
+mainMenuJsMenuAllWrap = |
+# cat=plugin-tx_dbttv-basics/enable/m; type=options[No=0,Yes=1]; label=Switch off tab-navigation?:IMPORTANT: If you switch off the tab-navigation, you should set [subMenuEntryLevel] to 0 - otherwise the FIRST level of your pagetree ist NOT shown, because the tab-naviation doesn't exist anymore.
+tabNavigationOff = 0
+# cat=plugin-tx_dbttv-basics/enable/n; type=int+; label=Entry level of tab-navigation:By default it shows all pages of the FIRST level (0) in your pagetree.
+tabNavEntryLevel = 0
+# cat=plugin-tx_dbttv-basics/enable/o; type=string; label=Exclude from tab-navigation:Enter a comma-separated list of page-IDs here, to be excluded from tab-navigation.
+tabNavExcludeList =
+# cat=plugin-tx_dbttv-basics/enable/p; type=options[No=0,Yes=1]; label=Switch off entire submenu?:NOTICE: If you turn off the submenu, all other options concerning it are ignored, of course.
+subMenuOff = 0
+# cat=plugin-tx_dbttv-basics/enable/q; type=options[No=0,Yes=1]; label=Switch off headline above submenu?:Maybe your design requires this.
+menuHeadlineOff = 0
+# cat=plugin-tx_dbttv-basics/enable/r; type=int+; label=Entry level of submenu:The submenu is the menu on the left side and by default it shows all pages and subpages of the SECOND level in your pagetree. 
+subMenuEntryLevel = 1
+# cat=plugin-tx_dbttv-basics/enable/s; type=options[No=0,Yes=1]; label=Expand levels of submenu?:By default ALL levels of submenu are expanded (open). If there are many pages and subpages in your pagetree, it is possibly better to set this feature to "no" to make it more concise for the website-user. Then, the resepective levels are expanded (opened) only, if the user clicks on a parent-page.
+subMenuExpandToggle = 1
+# cat=plugin-tx_dbttv-basics/enable/t; type=string; label=Exclude from sub navigation:Enter a comma-separated list of page-IDs here, to be excluded from sub navigation.
+subNavExcludeList =
+# cat=plugin-tx_dbttv-basics/enable/u; type=options[No=0,Yes=1]; label=Switch off entire footer?:MUST NOT be removed, unless you bought a license.
+footerOff = 0
+# cat=plugin-tx_dbttv-basics/enable/v; type=string; label=Footer Links (Lang 0):HTML-Code for the footer (standard language). MUST NOT be removed, unless you bought a license.
+footerStandardLangHtmlCode = This layout is based on &copy; <a href="http://www.yaml.de/en/" target="_blank">YAML</a> | TYPO3 Template &copy; by <a href="http://www.t3net.in.th/" target="_blank">T3NET Co.,Ltd.</a>
+# cat=plugin-tx_dbttv-basics/enable/w; type=string; label=Footer Links (Lang 1):HTML-Code for the footer (first foreign language).
+footerFirstLangHtmlCode =
+# cat=plugin-tx_dbttv-basics/enable/x; type=string; label=Footer Links (Lang 2):HTML-Code for the footer (second foreign language).
+footerSecondLangHtmlCode =
+# cat=plugin-tx_dbttv-basics/enable/y; type=string; label=Footer Links (Lang 3):HTML-Code for the footer (third foreign language).
+footerThirdLangHtmlCode =
+# cat=plugin-tx_dbttv-basics/enable/z; type=string; label=Footer Links (Lang 4):HTML-Code for the footer (fourth foreign language).
+footerFourthLangHtmlCode =
+# cat=plugin-tx_dbttv-basics/enable/za; type=string; label=Footer Links (Lang 5):HTML-Code for the footer (fifth foreign language).
+footerFifthLangHtmlCode =
+# cat=plugin-tx_dbttv-basics/enable/zb; type=string; label=Footer Links (Lang 6):HTML-Code for the footer (sixth foreign language).
+footerSixthLangHtmlCode =
+
+# cat=plugin-tx_dbttv-basics/typo/a; type=wrap; label=Link to top (Lang 0):Wrap for "Link-To-Top" (small Icon):
+pageLinkToTopStandardLang = |<p class="csc-linkToTop"><a href="#content"><img src="fileadmin/img/icons/top.gif" alt="" title="To top" /></a></p>
+# cat=plugin-tx_dbttv-basics/typo/b; type=wrap; label=Link to top (Lang 1):Wrap for "Link-To-Top" (small Icon):
+pageLinkToTopFirstLang = |<p class="csc-linkToTop"><a href="#content"><img src="fileadmin/img/icons/top.gif" alt="" title="To top" /></a></p>
+# cat=plugin-tx_dbttv-basics/typo/c; type=wrap; label=Link to top (Lang 2):Wrap for "Link-To-Top" (small Icon):
+pageLinkToTopSecondLang = |<p class="csc-linkToTop"><a href="#content"><img src="fileadmin/img/icons/top.gif" alt="" title="To top" /></a></p>
+# cat=plugin-tx_dbttv-basics/typo/d; type=wrap; label=Link to top (Lang 3):Wrap for "Link-To-Top" (small Icon):
+pageLinkToTopThirdLang = |<p class="csc-linkToTop"><a href="#content"><img src="fileadmin/img/icons/top.gif" alt="" title="To top" /></a></p>
+# cat=plugin-tx_dbttv-basics/typo/e; type=wrap; label=Link to top (Lang 4):Wrap for "Link-To-Top" (small Icon):
+pageLinkToTopFourthLang = |<p class="csc-linkToTop"><a href="#content"><img src="fileadmin/img/icons/top.gif" alt="" title="To top" /></a></p>
+# cat=plugin-tx_dbttv-basics/typo/f; type=wrap; label=Link to top (Lang 5):Wrap for "Link-To-Top" (small Icon):
+pageLinkToTopFifthLang = |<p class="csc-linkToTop"><a href="#content"><img src="fileadmin/img/icons/top.gif" alt="" title="To top" /></a></p>
+# cat=plugin-tx_dbttv-basics/typo/g; type=wrap; label=Link to top (Lang 6):Wrap for "Link-To-Top" (small Icon):
+pageLinkToTopSixthLang = |<p class="csc-linkToTop"><a href="#content"><img src="fileadmin/img/icons/top.gif" alt="" title="To top" /></a></p>
+
+# cat=plugin-tx_dbttv-basics/other/a; type=wrap; label=Mainmenu (Lang all, optional):Wrap around each single link (if needed):
+mainMenuLinkWrap = |
+# cat=plugin-tx_dbttv-basics/other/b; type=wrap; label=Mainmenu (Lang all, optional):The wrap around a single Link in the mainmenu, if subpages are present (if needed):
+mainMenuIfsubLinkWrap = |
+# cat=plugin-tx_dbttv-basics/other/c; type=wrap; label=Mainmenu (Lang all, optional):The wrap around the headline of the mainmenu (if needed):
+mainMenuHeaderWrap = |
+# cat=plugin-tx_dbttv-basics/other/d; type=options[XHTML 1.0 Transitional=xhtml_trans,XHTML 1.0 Frameset=xhtml_frames,XHTML 1.0 Strict=xhtml_strict,XHTML 1.1=xhtml_11,XHTML 2=xhtml_2,NO doctype at all=none]; label=Doctype to use:Be careful and change this setting only if you know, what you are doing. Otherwise your pages might NOT be valid.
+docTypeToUse = xhtml_trans
+
+
+# cat=plugin-tx_dbttv-language/language/a; type=string; label=Languages to use:If set to empty, ''ALL'' languages found in table sys_language will be used. Provide a comma separated list (e.g. 2,5,8) to use languages with corresponding UIDs only.:
+yamlTemplateUsesLanguages = 1
+# cat=plugin-tx_dbttv-language/language/b; type=string; label=Default language (Lang 0):UID of your default language (usually ALWAYS 0):
+standardLanguage = 0
+# cat=plugin-tx_dbttv-language/language/c; type=string; label=First foreign language (Lang 1):UID of your first foreign language (if any):
+firstForeignLanguage = 1
+# cat=plugin-tx_dbttv-language/language/d; type=string; label=Second foreign language (Lang 2):UID of your second foreign language (if any):
+secondForeignLanguage = 2
+# cat=plugin-tx_dbttv-language/language/e; type=string; label=Third foreign language (Lang 3):UID of your third foreign language (if any):
+thirdForeignLanguage = 3
+# cat=plugin-tx_dbttv-language/language/f; type=string; label=Fourth foreign language (Lang 4):UID of your fourth foreign language (if any):
+fourthForeignLanguage = 4
+# cat=plugin-tx_dbttv-language/language/g; type=string; label=Fifth foreign language (Lang 5):UID of your fifth foreign language (if any):
+fifthForeignLanguage = 5
+# cat=plugin-tx_dbttv-language/language/h; type=string; label=Sixth foreign language (Lang 6):UID of your sixth foreign language (if any):
+sixthForeignLanguage = 6
+# cat=plugin-tx_dbttv-language/language/i; type=string; label=ISO-Code (Lang 0):of the standard language. ISO code like en, dk, de, no, it, and so on.
+languageIsoCodeStandardLang = en
+# cat=plugin-tx_dbttv-language/language/j; type=string; label=ISO-Code (Lang 1):of the first foreign language.
+languageIsoCodeFirstLang =
+# cat=plugin-tx_dbttv-language/language/k; type=string; label=ISO-Code (Lang 2):of the second foreign language.
+languageIsoCodeSecondLang =
+# cat=plugin-tx_dbttv-language/language/l; type=string; label=ISO-Code (Lang 3):of the third foreign language.
+languageIsoCodeThirdLang =
+# cat=plugin-tx_dbttv-language/language/m; type=string; label=ISO-Code (Lang 4):of the fourth foreign language.
+languageIsoCodeFourthLang =
+# cat=plugin-tx_dbttv-language/language/n; type=string; label=ISO-Code (Lang 5):of the fifth foreign language.
+languageIsoCodeFifthLang =
+# cat=plugin-tx_dbttv-language/language/o; type=string; label=ISO-Code (Lang 6):of the sixth foreign language.
+languageIsoCodeSixthLang =
+# cat=plugin-tx_dbttv-language/language/p; type=string; label=Locale-Setting (Lang 0):of the standard language. This is a bit tricky, because it depends on your webserver. Try different settings if dates and times are not shown correctly. On Windows-servers use the literals e.g. "german", on Linux-servers try to use the codes (e.g. de_DE*) according to the language you use. To find out which locales are installed on your Linux-Server, type 'locale -a' in a shell. Possible values are e.g. german, english (for Windows) or de_DE, de_DE@euro, de_DE.iso88591, de_DE.iso885915@euro, de_DE.utf8, en_US, en_US.iso88591, en_US.iso885915, en_US.utf8 (for Linux).
+languageLocaleStandardLang =
+# cat=plugin-tx_dbttv-language/language/q; type=string; label=Locale-Setting (Lang 1):of the first foreign language.
+languageLocaleFirstLang =
+# cat=plugin-tx_dbttv-language/language/r; type=string; label=Locale-Setting (Lang 2):of the second foreign language.
+languageLocaleSecondLang =
+# cat=plugin-tx_dbttv-language/language/s; type=string; label=Locale-Setting (Lang 3):of the second foreign language.
+languageLocaleThirdLang =
+# cat=plugin-tx_dbttv-language/language/t; type=string; label=Locale-Setting (Lang 4):of the second foreign language.
+languageLocaleFourthLang =
+# cat=plugin-tx_dbttv-language/language/u; type=string; label=Locale-Setting (Lang 5):of the second foreign language.
+languageLocaleFifthLang =
+# cat=plugin-tx_dbttv-language/language/v; type=string; label=Locale-Setting (Lang 6):of the second foreign language.
+languageLocaleSixthLang =
+
+
+# cat=plugin-tx_dbttv-headlines/other/a; type=options[No=0,Yes=1]; label=H1 - replace with image?:This is done with Phark-Method image-replacement technique. See http://meiert.com/de/publications/articles/20050513/#toc-phark for details. The text you entered in header-field is used for the image.
+replaceH1withImage = 0
+# cat=plugin-tx_dbttv-headlines/other/b; type=color; label=H1 - fontcolor:If replaced with an image, choose font color here.
+imageColorH1 = #776655
+# cat=plugin-tx_dbttv-headlines/other/c; type=options[No=0,Yes=1]; label=H1 - background transparency:Set color of top-left pixel to transparent.
+backgroundTransparencyH1 = 0
+# cat=plugin-tx_dbttv-headlines/other/d; type=color; label=H1 - background color:If replaced with an image, choose background color here or set a transparent background.
+backgroundColorH1 = #ffffff
+# cat=plugin-tx_dbttv-headlines/other/e; type=options[No=0,Yes=1]; label=H1 - use niceText option?:Depending on the font you use, this renders ugly sometimes. Just turn it off if the result is not good.
+niceTextH1 = 0
+# cat=plugin-tx_dbttv-headlines/other/f; type=int+; label=H1 - fontsize:Fontsize in pixels. Also used for vertical offset. You need to adjust h1.G height-attribute also, in your content.css file, if you change this setting.
+fontSizeH1 = 24
+# cat=plugin-tx_dbttv-headlines/other/g; type=string; label=H1 - fontfile:Make sure the path and filename is set correctly here.
+imageFontH1 = fileadmin/fonts/Share-Regular.ttf
+# cat=plugin-tx_dbttv-headlines/other/h; type=options[No=0,Yes=1]; label=H2 - replace with image?:This is done with Phark-Method image-replacement technique. See http://meiert.com/de/publications/articles/20050513/#toc-phark for details. The text you entered in header-field is used for the image.
+replaceH2withImage = 0
+# cat=plugin-tx_dbttv-headlines/other/i; type=color; label=H2 - fontcolor:If replaced with an image, choose font color here or set a transparent background.
+imageColorH2 = #4466CC
+# cat=plugin-tx_dbttv-headlines/other/j; type=options[No=0,Yes=1]; label=H2 - background transparency:Set color of top-left pixel to transparent.
+backgroundTransparencyH2 = 0
+# cat=plugin-tx_dbttv-headlines/other/k; type=color; label=H2 - background color:If replaced with an image, choose background color here.
+backgroundColorH2 = #ffffff
+# cat=plugin-tx_dbttv-headlines/other/l; type=options[No=0,Yes=1]; label=H2 - use niceText option?:Depending on the font you use, this renders ugly sometimes. Just turn it off if the result is not good.
+niceTextH2 = 0
+# cat=plugin-tx_dbttv-headlines/other/m; type=int+; label=H2 - fontsize:Fontsize in pixels. Also used for vertical offset. You need to adjust h1.G height-attribute also, in your content.css file, if you change this setting.
+fontSizeH2 = 20
+# cat=plugin-tx_dbttv-headlines/other/n; type=string; label=H2 - fontfile:Make sure the path and filename is set correctly here.
+imageFontH2 = fileadmin/fonts/Share-Regular.ttf
+# cat=plugin-tx_dbttv-headlines/other/o; type=options[No=0,Yes=1]; label=H3 - replace with image?:This is done with Phark-Method image-replacement technique. See http://meiert.com/de/publications/articles/20050513/#toc-phark for details. The text you entered in header-field is used for the image.
+replaceH3withImage = 0
+# cat=plugin-tx_dbttv-headlines/other/p; type=color; label=H3 - fontcolor:If replaced with an image, choose font color here or set a transparent background.
+imageColorH3 = #958830
+# cat=plugin-tx_dbttv-headlines/other/q; type=options[No=0,Yes=1]; label=H3 - background transparency:Set color of top-left pixel to transparent.
+backgroundTransparencyH3 = 0
+# cat=plugin-tx_dbttv-headlines/other/r; type=color; label=H3 - background color:If replaced with an image, choose background color here or set a transparent background.
+backgroundColorH3 = #ffffff
+# cat=plugin-tx_dbttv-headlines/other/s; type=options[No=0,Yes=1]; label=H3 - use niceText option?:Depending on the font you use, this renders ugly sometimes. Just turn it off if the result is not good.
+niceTextH3 = 0
+# cat=plugin-tx_dbttv-headlines/other/t; type=int+; label=H3 - fontsize:Fontsize in pixels. Also used for vertical offset. You need to adjust h1.G height-attribute also, in your content.css file, if you change this setting.
+fontSizeH3 = 20
+# cat=plugin-tx_dbttv-headlines/other/u; type=string; label=H3 - fontfile:Make sure the path and filename is set correctly here.
+imageFontH3 = fileadmin/fonts/Share-Regular.ttf
+# cat=plugin-tx_dbttv-headlines/other/v; type=options[No=0,Yes=1]; label=H4 - replace with image?:This is done with Phark-Method image-replacement technique. See http://meiert.com/de/publications/articles/20050513/#toc-phark for details. The text you entered in header-field is used for the image.
+replaceH4withImage = 0
+# cat=plugin-tx_dbttv-headlines/other/w; type=color; label=H4 - fontcolor:If replaced with an image, choose font color here.
+imageColorH4 = #ff4444
+# cat=plugin-tx_dbttv-headlines/other/x; type=options[No=0,Yes=1]; label=H4 - background transparency:Set color of top-left pixel to transparent.
+backgroundTransparencyH4 = 0
+# cat=plugin-tx_dbttv-headlines/other/y; type=color; label=H4 - background color:If replaced with an image, choose background color here or set a transparent background.
+backgroundColorH4 = #ffffff
+# cat=plugin-tx_dbttv-headlines/other/z; type=options[No=0,Yes=1]; label=H4 - use niceText option?:Depending on the font you use, this renders ugly sometimes. Just turn it off if the result is not good.
+niceTextH4 = 0
+# cat=plugin-tx_dbttv-headlines/other/za; type=int+; label=H4 - fontsize:Fontsize in pixels. Also used for vertical offset. You need to adjust h1.G height-attribute also, in your content.css file, if you change this setting.
+fontSizeH4 = 18
+# cat=plugin-tx_dbttv-headlines/other/zb; type=string; label=H4 - fontfile:Make sure the path and filename is set correctly here.
+imageFontH4 = fileadmin/fonts/Share-Regular.ttf
+# cat=plugin-tx_dbttv-headlines/other/zc; type=options[No=0,Yes=1]; label=H5 - replace with image?:This is done with Phark-Method image-replacement technique. See http://meiert.com/de/publications/articles/20050513/#toc-phark for details. The text you entered in header-field is used for the image.
+replaceH5withImage = 0
+# cat=plugin-tx_dbttv-headlines/other/zd; type=color; label=H5 - fontcolor:If replaced with an image, choose font color here.
+imageColorH5 = #888888
+# cat=plugin-tx_dbttv-headlines/other/ze; type=options[No=0,Yes=1]; label=H5 - background transparency:Set color of top-left pixel to transparent.
+backgroundTransparencyH5 = 0
+# cat=plugin-tx_dbttv-headlines/other/zf; type=color; label=H5 - background color:If replaced with an image, choose background color here or set a transparent background.
+backgroundColorH5 = #ffffff
+# cat=plugin-tx_dbttv-headlines/other/zg; type=options[No=0,Yes=1]; label=H5 - use niceText option?:Depending on the font you use, this renders ugly sometimes. Just turn it off if the result is not good.
+niceTextH5 = 0
+# cat=plugin-tx_dbttv-headlines/other/zh; type=int+; label=H5 - fontsize:Fontsize in pixels. Also used for vertical offset. You need to adjust h1.G height-attribute also, in your content.css file, if you change this setting.
+fontSizeH5 = 18
+# cat=plugin-tx_dbttv-headlines/other/zg; type=string; label=H5 - fontfile:Make sure the path and filename is set correctly here.
+imageFontH5 = fileadmin/fonts/Share-Regular.ttf
+
+
+# cat=plugin-tx_dbttv-statistics/other/a; type=options[Off=0,On=1]; label=Use Awstats?:Set to On, if you have installed cc_awstats and want to use it. You MUST either manually (not recommended) add $TYPO3_CONF_VARS['FE']['logfile_dir'] = 'fileadmin/' to localconf.php OR (recommended) use the install-tool and set logfile_dir to fileadmin/ - This works ONLY if you install cc_awstats, which is NOT part of the YAML-Project. 
+statisticsSetting = 0
+# cat=plugin-tx_dbttv-statistics/other/b; type=options[Off=0,On=1]; label=config.stat_apache:MUST be set if you want to use cc_awstats.
+statApacheSetting = 0
+# cat=plugin-tx_dbttv-statistics/other/c; type=string; label=Logfile:The file must reside in folder fileadmin/ and must be writeable for the webserver.
+statApacheLogFile = logfile.log
+# cat=plugin-tx_dbttv-statistics/other/d; type=options[Off=0,On=1]; label=config.stat_mysql:You can use this if you want database logging also but it's not needed.
+statMysqlSetting = 0
+
+
+# cat=plugin-tx_dbttv-urls/other/a; type=options[No=0,Yes=1]; label=Use simulateStaticDocuments?:If you are NOT using realURL, you can use simulateStaticDocuments instead. You CANNOT use this in conjunction with realURL. If enabled, the next 3 option are important for simulateStaticDocuments and must be either left at its default values or set to values that fit your needs. No extension is required, everything is included in TYPO3 already. IMPORTANT: Apache-module mod_rewrite must be installed on your webserver and you need a file named .htaccess in the root of your webserver.
+simStatDocOn = 0
+# cat=plugin-tx_dbttv-urls/other/b; type=int+; label=Add pagetitle:If not zero, TYPO3 generates urls with the title in, limited to the first x number of chars. If set to zero (0) this feature is turned off.
+simStatDocAddTitle = 40
+# cat=plugin-tx_dbttv-urls/other/c; type=options[base64,md5]; label=Encode additional parameters:Allows you to also encode additional parameters into the simulated filename. If you don't understand this, just leave the default setting.
+simStatDocPenc = md5
+# cat=plugin-tx_dbttv-urls/other/d; type=string; label=List of variables:A list of variables that may be a part of the md5/base64 encoded part of a simulate_static_document virtual filename.
+simStatDocPencOnlyP = cHash, tx_ttnews[backPid], tx_ttnews[tt_news], tx_ttnews[pS], tx_ttnews[pL], tx_ttnews[arc], tx_ttnews[cat], tx_ttnews[pointer], tx_ttnews[swords]
+# cat=plugin-tx_dbttv-urls/other/e; type=options[No=0,Yes=1]; label=Use realurl?:Enable this feature only, if you have installed the TYPO3 extension realurl. IMPORTANT: You have to configure realurl by means of its documentation. Read it! If you enable this feature, simulateStaticDocuments is switched off automatically, no matter what you set there. The option tx_realurl_enable = 1, which is required by realurl, is set automatically, if this feature is enabled. Do not forget to set Base URL also.
+realUrlOn = 0
+# cat=plugin-tx_dbttv-urls/other/f; type=options[No=0,Yes=1]; label=Use cooluri?:Enable this feature only, if you have installed the TYPO3 extension cooluri. IMPORTANT: You have to configure cooluri by means of its documentation. Read it! If you enable this feature, simulateStaticDocuments is switched off automatically, no matter what you set there. The option tx_cooluri_enable = 1, which is required by cooluri, is set automatically, if this feature is enabled. Do not forget to set Base URL also.
+coolUriOn = 0
+# cat=plugin-tx_dbttv-urls/other/g; type=string; label=Base URL:YOU MUST CHANGE this default-setting to YOUR domain. Use the same format as the default-setting (including the trailing slash '/'). IMPORTANT: The online-documentation of realurl instructs you to set this to '1' - THIS IS WRONG, set it to a domain, otherwise it will not work.
+userBaseUrl = http://www.changeme.tld/
+# cat=plugin-tx_dbttv-urls/other/h; type=options[all,cached,output]; label=Prefix local anchors:If realurl or cooluri is used and this feature is set to one of the keywords, the content will have all local anchors in links prefixed with the path of the script. Basically this means that <a href="#"> will be transformed to <a href="path/path/script?params#">. This procedure is necessary if Base URL is set. (all = the content is always processed before it may be stored in cache. cached = only if the page is put into the cache. output = only the output code just before it's echoed out.)
+userPrefixLocalAnchors = all
+
+
+# cat=plugin-tx_dbttv-expert-settings/other/a; type=options[No=0,Yes=1]; label=Enable Admin-Panel?:If set, the admin panel appears in the bottom of pages. NOTE: In addition the panel must be enabled for non-admin users as well, if you want this, using the TSconfig for the non-admin user! See adminguide documentation. 
+userAdmPanelOn = 0
+# cat=plugin-tx_dbttv-expert-settings/other/b; type=options[No=0,Yes=1]; label=Enable indexing at all?:Enables cached pages to be indexed. Must be enabled to get indexed_search to work. 
+userIndexingOn = 0
+# cat=plugin-tx_dbttv-expert-settings/other/c; type=options[No=0,Yes=1]; label=Index external documents?:If set, external media linked to on the pages is indexed as well. Certain software must to be installed on your webserver to use this feature. See indexed_serach documentation.
+userIndexExternalsOn = 0
+# cat=plugin-tx_dbttv-expert-settings/other/c; type=options[No=0,Yes=1]; label=Index metatags?:If set, all words contained in the metatags will be also be indexed. Should be turned on only in special circumstances.
+userIndexMetaTagsOn = 0
+# cat=plugin-tx_dbttv-expert-settings/other/d; type=options[all,cached,output]; label=XHTML cleaning:Tries to clean up the output to make it XHTML compliant and a bit more. (all = the content is always processed before it may be stored in cache. cached = only if the page is put into the cache. output = only the output code just before it's echoed out.) 
+userXhtmlCleaning = all
+# cat=plugin-tx_dbttv-expert-settings/other/e; type=options[ltr,rtl]; label=Text direction:Sets text direction for whole document (useful for display of Arabic, Hebrew pages). Basically the value becomes the attribute value of "dir" for the <html> tag. (ltr = Left-To-Right, rtl = Right-To-Left) 
+userHtmlTagDir = ltr
+# cat=plugin-tx_dbttv-expert-settings/other/f; type=options[No=0,Yes=1]; label=Prefix comments off?:This is for debugging your TypoScript Code. If switched On, HTML comments are added like <!-- Output of lib.header.20 [begin] --> and <!-- Output of lib.header.20 [end] --> to find the output of an element easier in HTML source. The COA-Elements must be prepared to do this. Turn off for production environments!
+userDisablePrefComm = 1
+# cat=plugin-tx_dbttv-expert-settings/other/g; type=options[No=0,Yes=1]; label=YAML Debugging on?:If switched on, a grid will be shown as background-image of the body-Tag. It also checks, whether or not IE patchfiles are included correctly. See www.yaml.de/en/documentation/practice/drafting-and-debugging.html for more information on debugging your layouts with YAML.
+yamlDebugOn = 0
+# cat=plugin-tx_dbttv-expert-settings/other/h; type=options[No=0,Yes=1]; label=Show Filler-Link?:If switched on, a link is shown at the end of each page, to fill in dummy text. This is for testing the layout.
+yamlFillerLinkOn = 0
+# cat=plugin-tx_dbttv-expert-settings/other/i; type=options[No=0,Yes=1]; label=Access Keys Off?:Switch off alle access keys used in menus.
+accessKeysAndDfnOff = 1
+# cat=plugin-tx_dbttv-expert-settings/other/j; type=options[No=0,Yes=1]; label=Access Key Help Off?:If access keys are switched on, they can be shown after the pagetitle (e.g. (ALT-E)) if this feature is enabled.
+accessKeyHelpOff = 1

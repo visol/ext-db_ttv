@@ -1,0 +1,262 @@
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>HTML template 2col_left_13.html</title>
+</head>
+<body>
+<div id="page_margins">
+	<div id="page">
+		<div id="header">...</div>
+		<div id="nav">...</div>
+		<div id="main">
+			<div id="teaser">...</div>
+			<div id="col1">
+				<div id="col1_content" class="clearfix">
+					<style type="text/css">
+
+html {
+font-family: Arial, Verdana;
+}
+
+#searchbox {
+width: 212px;
+/*padding: 10px;*/
+/*margin-left: auto;*/
+/*margin-right:auto;*/
+/*opacity: 0.6;
+  filter: alpha(opacity=60); For IE8 and earlier */
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 4px;
+      
+}
+
+#searchbox textarea, input {
+font-family: Arial, Verdana;
+}
+
+#simple { /*ag Abstand Box-Elemente*/
+padding:0px;
+}
+
+.form-row {
+/*border: 1px solid red;*/ /* ag Sichtbarkeit Rahmen*/
+border:0;
+line-height: 20px; /* ag 1em ?*/
+height: 20px; /* ag 1.7em*/
+background-color: #ffff;
+}
+
+#simple input[type=text], textarea {
+border: 1px solid #CCC; /* ag Sichtbarkeit Rahmen*/
+width: 156px;
+height: 19px; /* ag ergänzt*/
+margin-left:0px; /*ag*/
+padding-right:0px; /*ag*/
+margin-right:0px; /*ag*/
+padding:0px; /*ag war 5px*/
+padding-left:2px; /* ag Abstand eingeblendeter Text */
+font-size: 0.83em;
+color:darkgrey;
+font-weight: normal;
+background-color: #0000; /*ag*/
+}
+
+#simple input[type=text]:focus, textarea:focus {
+border: 1px solid #99CDFF; /* ag Sichtbarkeit Rahmen*/
+width: 156px;
+padding:0px; /*ag war 5px*/
+padding-left:2px; /* ag Abstand eingegebener Text */
+margin-left:0px; /*ag*/
+padding-right:0px; /*ag*/
+margin-right:0px; /*ag*/
+color: dimgrey;
+font-weight: normal;
+/* outline-style: solid; */ /*ag*/
+/* outline-width: 1px; */
+/* outline-color: #adc687; */ /*ag*/
+}
+
+#simple input[type="button"], input[type="reset"], input[type="submit"] {
+/*border: 1px solid cyan;*/ /* ag Sichtbarkeit Rahmen*/
+border: 0px solid red; /*ag Rand Knopf Suche*/
+width: 50px;
+height: 21px;
+padding: 0px; /*ag war 2px*/
+margin: 0px; /* ag eingefügt*/
+cursor: pointer; *overflow: visible; -webkit-appearance:none;
+}
+
+#simple #heading {
+font-size: 0.83em;
+font-weight: bold;
+color: black;
+margin-top: 10px;
+line-height: 1.5em;
+}
+
+#simple #links { /*ag nicht im Einsatz*/
+font-size: 70%;
+color: #0075B0;
+margin-top: 10px;
+line-height: 1.5em;
+}
+
+#links a { /*ag nicht im Einsatz*/
+text-decoration: none;
+padding-right: 3px;
+padding-left: 0px;
+border-right: solid 1px #ccc;
+}
+
+#simple #konto {
+font-size: 100%;
+font-weight: bold;
+color: black;
+margin-top: 10px;
+line-height: 1.5em;
+}
+
+#konto a {
+text-decoration:none;
+padding-right:3px; /* ag ?*/
+padding-left:0px;
+font-weight: normal;
+// border-right:solid 1px #ccc; //
+}
+
+#konto a:hover { /*ag*/
+text-decoration:underline;
+background-color: #ffffff;
+font-weight: normal;
+}
+
+.submitbox {
+background-color: #99CDFF;
+color: #FFFFFF;
+font-size: 0.83em;
+margin-left: 0px; /*ag eingefügt - kein Zeilenumbruch HTML-Code*/
+cursor: pointer;
+height: 22px; /*ag ?*/
+}
+
+</style>
+
+<!--Primo Search Script-->
+<script type="text/javascript">
+<!--
+function enterKey(evt) {
+	var evt = (evt) ? evt : event
+	var charCode = (evt.which) ? evt.which : evt.keyCode
+	if (charCode == 13) {
+		searchPrimo()
+	}
+}
+function searchPrimo() {
+	document.getElementById("primoQuery").value = "any,contains," +
+		document.getElementById("primoQueryTemp").value;
+	document.forms["searchForm"].submit();
+}
+function searchPrimoEvent(event) {
+	if (event && event.which == 13) {
+		document.getElementById("primoQuery").value = "any,contains," +
+			document.getElementById("primoQueryTemp").value;
+		document.forms["searchForm"].submit();
+	}
+	else
+		return true;
+}
+//-->
+
+</script>
+
+<!-- Searchbox Start -->
+<div id="searchbox">
+
+<!-- Search Start -->
+<!-- div style="border: solid 1px red;" -->
+<div>
+  <form id="simple" action="http://primo-direct-eu.hosted.exlibrisgroup.com/primo_library/libweb/action/dlSearch.do" method="get" name="searchForm" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo()" target="_blank" >
+
+<!-- Header Start -->
+<!-- <div style="margin-bottom: 2px">
+  <img src="http://ilu.zhbluzern.ch/local/primo/plus_logo_zusammen_50.gif"> -->
+<!-- <div id="heading"> ag -->
+ <!-- ag -->
+
+<!-- Header End -->
+
+
+<!-- Input Start -->
+<div class="form-row">
+  <input type="hidden" name="institution" value="41ZBL">
+  <input type="hidden" name="vid" value="41ZBL">
+  <input type="hidden" name="group" value="GUEST">
+  <input type="hidden" name="onCampus" value="true">
+  <input type="hidden" name="displayMode" value="full">
+  <input type="hidden" name="query" id="primoQuery">
+  <input type="hidden" name="highlight" value="true">
+  <input type="hidden" name="displayField" value="all">
+  <input type="hidden" name="mode" value="Basic">
+  <input type="hidden" name="search_scope" value="institution_scope">
+  <input type="text" id="primoQueryTemp" value="" name="queryTemp" onkeypress="return searchPrimoEvent(event)"/><input id="goButton" type="submit" value="Suche" onclick="searchPrimo()"  class="submitbox" accesskey="g"/>
+
+<script type="text/javascript">
+<!--
+	var defaultText = "Bücher, Artikel und mehr";
+	var queryTemp = document.getElementById("primoQueryTemp");
+
+	//default text after load
+	queryTemp.value = defaultText;
+
+	//on focus behaviour
+	queryTemp.onfocus = function() {
+		if (this.value == defaultText) {//clear text field
+			this.value = '';
+		}
+	}
+
+	//on blur behaviour
+	queryTemp.onblur = function() {
+		if (this.value == "") {//restore default text
+			this.value = defaultText;
+		}
+	}
+
+//-->
+</script>
+
+<!-- Input End -->
+</div>
+
+</form>
+
+<!-- Search End -->
+</div>
+
+<!-- Searchbox End -->
+</div>
+					<ul id="submenu"><li>...</li></ul>
+					<div class="selectorBox">...</div>
+					<div class="textBelowMenu">...</div>
+					<div id="felogin"></div>
+					<div id="hinweis"></div>
+				</div>
+			</div>
+			<div id="col3">
+			  <a id="content" name="content"></a>
+				<div id="col3_content" class="clearfix">
+					<div class="floatbox">...</div>
+				</div>
+				<div id="ie_clearing">&nbsp;</div>
+			</div>
+		</div>
+		<div id="footer">...</div>
+	</div>
+</div>
+</body>
+</html>
